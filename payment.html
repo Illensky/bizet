@@ -2,9 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bizet Littérature - Paiement</title>
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+    <link rel="stylesheet" href="assets/CSS/main.css">
 </head>
 <body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" title="home">Acceuil</a>
+            </li>
+            <li>
+                <a href="client_space.html" title="client space">Espace client</a>
+            </li>
+            <li>
+                <a href="contact.html" title="contact">Contact</a>
+            </li>
+            <li>
+                <!-- ce lien devra proposer la connexion ou déconnexion en fonction du statut de l'utilisateur -->
+                <a href="connexion.html" title="connexion">Connexion/Inscription</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="corpus">
+    <h1>Paiement</h1>
+    <form>
 
+        <div>
+            <!-- l'utilisateur doit pouvoir choisir parmis des moyens de paiement enregistrés -->
+            <label for="booker_payment_method">Moyen de paiement :</label>
+            <select name="payment_method" id="booker_payment_method">
+                <option value="credit_card_1">Visa **** 3467</option>
+                <option value="credit_card_2">Visa **** 4598</option>
+                <option value="credit_card_3">Visa **** 2063</option>
+                <option value="credit_card_4">Visa **** 1584</option>
+            </select>
+
+            <label for="booker_credit_card_number">N° Carte de crédit :</label>
+            <input type="number" name="credit_card_number" id="booker_credit_card_number">
+
+            <label for="booker_credit_card_name">Nom figurant sur la carte :</label>
+            <input type="text" maxlength="16" minlength="16" name="credit_card_name"
+                   id="booker_credit_card_name">
+
+            <label for="booker_credit_card_crypto">Cryptograme :</label>
+            <input type="number" maxlength="3" minlength="3" name="credit_card_crypto"
+                   id="booker_credit_card_crypto">
+        </div>
+        <div>
+            <label for="booker_accept_buying_condition">J'ai lu et j'accepte les
+                <a href="buying_condition.html">Conditions d'achat</a></label>
+            <input type="checkbox" name="buying_condition" id="booker_accept_buying_condition">
+
+            <input type="submit" value="Accepter">
+        </div>
+    </form>
+</div>
 </body>
 </html>

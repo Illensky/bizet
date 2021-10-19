@@ -2,9 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bizet Littérature - Réservation</title>
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+    <link rel="stylesheet" href="assets/CSS/main.css">
 </head>
 <body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" title="home">Acceuil</a>
+            </li>
+            <li>
+                <a href="client_space.html" title="client space">Espace client</a>
+            </li>
+            <li>
+                <a href="contact.html" title="contact">Contact</a>
+            </li>
+            <li>
+                <!-- ce lien devra proposer la connexion ou déconnexion en fonction du statut de l'utilisateur -->
+                <a href="connexion.html" title="connexion">Connexion/Inscription</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="corpus">
+    <h1>Reserver une leçon</h1>
+    <form name="booker_info" method="post" title="booker info" action="à venir">
+        <div>
+            <label for="booker_name">Nom :</label>
+            <input type="text" name="name" id="booker_name">
 
+            <label for="booker_surname">Prénom :</label>
+            <input type="text" name="surname" id="booker_surname">
+
+            <label for="booker_adress">Adresse :</label>
+            <input type="text" name="adress" id="booker_adress">
+
+            <label for="booker_city">Ville :</label>
+            <select name="city" id="booker_city">
+                <option value="amiens">Amiens</option>
+                <option value="allonville">Allonville</option>
+                <option value="bertangles">Bertangles</option>
+                <option value="blangy_tronville">Blangy-Tronville</option>
+                <option value="bovelles">Bovelles</option>
+                <option value="boves">Boves</option>
+                <option value="cagny">Cagny</option>
+                <option value="camon">Camon</option>
+                <option value="cardonnette">Cardonnette</option>
+                <option value="clairy_saulchoix">Clairy-Saulchoix</option>
+                <option value="creuse">Creuse</option>
+                <option value="dreuil_les_amiens">Dreuil Les Amiens</option>
+                <option value="dury">Dury</option>
+                <option value="estrees_sur_noye">Estrées-Sur-Noye</option>
+                <option value="ferrieres">Ferrières</option>
+                <option value="glisy">Glisy</option>
+                <option value="grattepanche">Grattepanche</option>
+                <option value="guignemicourt">Guignemicourt</option>
+                <option value="hebecourt">Hébécourt</option>
+                <option value="longueau">Longueau</option>
+                <option value="pissy">Pissy</option>
+                <option value="pont_de_metz">Pont De Metz</option>
+                <option value="poulainville">Poulainville</option>
+                <option value="querrieu">Querrieu</option>
+                <option value="remiencourt">Remiencourt</option>
+                <option value="revelles">Revelles</option>
+                <option value="rivery">Rivery</option>
+                <option value="rumigny">Rumigny</option>
+                <option value="sains_en_amienois">Sains En Amiénois</option>
+                <option value="saint_fuscien">Saint Fuscien</option>
+                <option value="saint_sauflieu">Saint Sauflieu</option>
+                <option value="saint_vaast_en_chaussee">Saint Vaast En Chaussée</option>
+                <option value="saleux">Saleux</option>
+                <option value="salouel">Salouël</option>
+                <option value="saveuse">Saveuse</option>
+                <option value="seux">Seux</option>
+                <option value="thezy_glimont">Thézy-Glimont</option>
+                <option value="vaux_en_amienois">Vaux En Amiénois</option>
+                <option value="vers_sur_selle">Vers Sur Selle</option>
+            </select>
+
+            <label for="booker_phone_number">N° à contacter pour cette leçon</label>
+            <input type="text" name="phone_number" id="booker_phone_number">
+        </div>
+
+        <div>
+            <label for="booker_accept_reservation_condition">J'ai lu et j'accepte les
+                <a href="reservation_condition.html">Conditions de réservation</a></label>
+            <input type="checkbox" name="reservation_condition" id="booker_accept_reservation_condition">
+
+            <input type="submit" value="Reserver">
+        </div>
+    </form>
+</div>
 </body>
 </html>

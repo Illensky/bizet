@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bizet Littérature - Connexion</title>
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+    <link rel="stylesheet" href="assets/CSS/main.css">
 </head>
 <body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" title="home">Acceuil</a>
+            </li>
+            <li>
+                <a href="client_space.html" title="client space">Espace client</a>
+            </li>
+            <li>
+                <a href="contact.html" title="contact">Contact</a>
+            </li>
+            <li>
+                <!-- ce lien devra proposer la connexion ou déconnexion en fonction du statut de l'utilisateur -->
+                <a href="connexion.html" title="connexion">Connexion/Inscription</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="corpus">
+    <h1>Connexion</h1>
+    <form name="account_connexion" id="user_account_connexion" method="post" action="a venir">
+        <div>
+            <label for="user_email">E-Mail :</label>
+            <input type="email" name="email" id="user_email">
 
+            <label for="user_password">Mot de passe :</label>
+            <input type="password" name="password" id="user_password">
+        </div>
+        <div>
+            <div>
+                <p>
+                    Pas encore de compte ?<a href="using_condition.html">Inscris toi dés maintenant</a>
+                </p>
+                <input type="submit" value="Connexion">
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>

@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bizet Littérature - Réservation</title>
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+    <link rel="stylesheet" href="assets/CSS/main.css">
 </head>
 <body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" title="home">Acceuil</a>
+            </li>
+            <li>
+                <a href="client_space.html" title="client space">Espace client</a>
+            </li>
+            <li>
+                <a href="contact.html" title="contact">Contact</a>
+            </li>
+            <li>
+                <!-- ce lien devra proposer la connexion ou déconnexion en fonction du statut de l'utilisateur -->
+                <a href="connexion.html" title="connexion">Connexion/Inscription</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="corpus">
+    <h1>Reserver une leçon</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur, eaque facere fugiat incidunt magnam
+        minus nesciunt perferendis placeat quaerat quam quas sit soluta totam voluptas. Delectus nam necessitatibus
+        officia?
+    </p>
 
+    <!-- Cette image est temporaire le temps de mettre en place un widget de réservation de créneaux -->
+    <img src="/assets/img/calendrier_provisoire.png"
+         title="bookingCalendar" alt="calendrier de réservation">
+    <!-- Ce bouton devra renvoyer sur connexion si l'utilisateur n'est pas loguer et sur la deuxieme
+     etape de réservation s'il est loguer-->
+    <a title="reservation" href="reservation2.html">
+        <button name="reservation" value="Reserver maintenant">Reserver maintenant</button>
+    </a>
+</div>
 </body>
 </html>

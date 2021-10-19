@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bizet Literature - Contact</title>
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+    <link rel="stylesheet" href="assets/CSS/main.css">
 </head>
 <body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" title="home">Acceuil</a>
+            </li>
+            <li>
+                <a href="client_space.html" title="client space">Espace client</a>
+            </li>
+            <li>
+                <a href="contact.html" title="contact">Contact</a>
+            </li>
+            <li>
+                <!-- ce lien devra proposer la connexion ou déconnexion en fonction du statut de l'utilisateur -->
+                <a href="connexion.html" title="connexion">Connexion/Inscription</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="corpus">
+    <h1>Me contacter</h1>
 
+    <form name="contact" id="user_contact" method="post" action="a venir">
+
+        <label for="user_email">Votre E-Mail :</label>
+        <input type="email" name="email" id="user_email">
+
+        <label for="user_email_object">Objet :</label>
+        <input type="text" name="object" id="user_email_object">
+
+        <label for="user_message">Message :</label>
+        <textarea name="message" id="user_message" placeholder="Saisissez votre message ici ...">
+        </textarea>
+
+        <input type="submit" name="send" id="user_send" value="Envoyer">
+    </form>
+
+</div>
 </body>
 </html>
