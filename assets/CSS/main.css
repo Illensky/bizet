@@ -2,25 +2,64 @@
                                                 General Style
 ========================================================================================================= */
 body {
-
+    background-color: #E2EAFC;
+    color: #EDF2FB;
 }
 
-h1 {
-
+header {
+    background-color: #ABC4FF;
+    display: inline-block;
+    width: 100%;
 }
 
-h2 {
-
+header li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
 }
 
-h3 {
-
+header li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
 }
 
-p {
-
+header li a:hover {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    transform: scale(110%);
+    background-color: #85a3fa;
 }
 
 .corpus {
+    background-color: #ABC4FF;
+    width: 75%;
+    margin: 25px auto;
+    padding: 35px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    text-align: justify;
+    margin: 15px;
+    padding: 5px;
+}
+
+form {
 
 }
+
+button {
+    display: block;
+    margin: auto;
+}
+
